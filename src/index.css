@@ -1,13 +1,46 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+::before,
+::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-1: hsl(26, 100%, 55%);
+  --primary-2: hsl(25, 100%, 94%);
+  --neutral-v-dark-b: hsl(220, 13%, 13%);
+  --neutral-dark-g-b: hsl(219, 9%, 45%);
+  --neutral-g-b: hsl(220, 14%, 75%);
+  --neutral-l-g-b: hsl(223, 64%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --shadow: hsl(0, 0%, 0%, 0.75);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.loading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--primary-1);
 }
