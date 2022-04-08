@@ -1,17 +1,19 @@
 import "./Navbar.css";
-import logo from "../logo.svg";
+import logo from "../assets/logo.svg";
 import avatar from "../assets/image-avatar.png";
 import { links } from "../data";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { IoCartOutline } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
+import { useGlobalContext } from "../context";
 
 const Navbar = () => {
+  const { openSidebar } = useGlobalContext();
   return (
     <nav>
       <div className="nav-center">
         <div className="nav-header">
           <div className="nav-menu">
-            <button className="nav-toggle">
+            <button className="nav-toggle" onClick={openSidebar}>
               <FaBars />
             </button>
             <img src={logo} alt="logo" />
@@ -28,7 +30,7 @@ const Navbar = () => {
           </div>
           <div className="nav-cart">
             <button className="nav-cart-btn">
-              <AiOutlineShoppingCart />
+              <IoCartOutline />
             </button>
             <img src={avatar} className="avatar" alt="avatar" />
           </div>
