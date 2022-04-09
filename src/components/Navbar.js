@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import logo from "../assets/logo.svg";
 import avatar from "../assets/image-avatar.png";
+import { Link } from "react-router-dom";
 import { links } from "../data";
 import { IoCartOutline } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
@@ -22,7 +23,7 @@ const Navbar = () => {
                 const { id, url, text } = link;
                 return (
                   <li key={id}>
-                    <a href={url}>{text}</a>
+                    <Link to={url}>{text}</Link>
                   </li>
                 );
               })}

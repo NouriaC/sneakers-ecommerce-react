@@ -1,5 +1,6 @@
 import "./Sidebar.css";
 import { links } from "../data";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { IoClose } from "react-icons/io5";
 import { useGlobalContext } from "../context";
@@ -25,7 +26,7 @@ const Sidebar = () => {
             const { id, url, text } = link;
             return (
               <li key={id}>
-                <a href={url}>{text}</a>
+                <Link to={url}>{text}</Link>
               </li>
             );
           })}
