@@ -1,0 +1,17 @@
+.page-hero-section {
+  background: var(--primary-2);
+  color: var(--neutral-dark-g-b);
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: var(--black);
+  padding: 0.5rem;
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--neutral-dark-g-b);
+}

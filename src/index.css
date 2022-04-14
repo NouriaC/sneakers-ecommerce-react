@@ -23,6 +23,7 @@
   --transition: 0.3s ease-in-out all;
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --max-width: 1170px;
 }
 
 body {
@@ -43,4 +44,20 @@ ul {
   font-size: 1.75rem;
   font-weight: bold;
   color: var(--primary-1);
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+.page {
+  min-height: calc(100vh - (20vh + 9.9rem));
 }
