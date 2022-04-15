@@ -12,7 +12,7 @@ export const products = [
     price: 12499,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    img: "https://images.pexels.com/photos/6050921/pexels-photo-6050921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://images.pexels.com/photos/1464648/pexels-photo-1464648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 1,
@@ -20,7 +20,7 @@ export const products = [
     price: 11399,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    img: "https://images.pexels.com/photos/6719187/pexels-photo-6719187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://images.pexels.com/photos/1580267/pexels-photo-1580267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const products = [
     price: 25999,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    img: "https://images.pexels.com/photos/4263996/pexels-photo-4263996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://images.pexels.com/photos/1124466/pexels-photo-1124466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const products = [
     price: 12499,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    img: "https://images.pexels.com/photos/6050921/pexels-photo-6050921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 5,
@@ -68,7 +68,7 @@ export const products = [
     price: 25999,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    img: "https://images.pexels.com/photos/4263996/pexels-photo-4263996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://images.pexels.com/photos/1464648/pexels-photo-1464648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 8,
@@ -76,7 +76,7 @@ export const products = [
     price: 11399,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    img: "https://images.pexels.com/photos/6719187/pexels-photo-6719187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://images.pexels.com/photos/1750045/pexels-photo-1750045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 9,
@@ -84,7 +84,7 @@ export const products = [
     price: 12999,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    img: "https://images.pexels.com/photos/6540980/pexels-photo-6540980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://images.pexels.com/photos/6692037/pexels-photo-6692037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 10,
@@ -92,6 +92,6 @@ export const products = [
     price: 25999,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    img: "https://images.pexels.com/photos/4263996/pexels-photo-4263996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://images.pexels.com/photos/1124466/pexels-photo-1124466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
 ];

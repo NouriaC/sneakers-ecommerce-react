@@ -1,18 +1,20 @@
-import { useState } from "react";
 import { products } from "../data";
 import PageHero from "../components/PageHero";
+import Search from "../components/Search";
+import Product from "../components/Product";
 
 const CollectionsPage = () => {
-  const [shoes, setShoes] = useState(products);
-
   return (
     <main>
       <PageHero title="products" />
       <section className="page">
-        <div className="product-container">
-          {products.map((item) => {
-            return <h2>{item.name}</h2>;
-          })}
+        <div className="section-center products">
+          <Search />
+          <section className="products-container">
+            {products.map((product) => {
+              return <Product key={product.id} {...product} />;
+            })}
+          </section>
         </div>
       </section>
     </main>

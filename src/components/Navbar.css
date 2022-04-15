@@ -1,6 +1,10 @@
 nav {
   background: var(--white);
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-center {
@@ -60,9 +64,8 @@ nav {
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: var(--max-width);
-    padding-bottom: 1rem;
-    border-bottom: 2px solid var(--neutral-l-g-b);
   }
+  
   .nav-toggle {
     display: none;
   }

@@ -59,5 +59,26 @@ ul {
 }
 
 .page {
-  min-height: calc(100vh - (20vh + 9.9rem));
+  min-height: calc(100vh - (20vh + 10rem));
+}
+
+.section-center.products {
+  margin-bottom: 2.5rem;
+}
+
+.products-container {
+  display: grid;
+  gap: 2rem 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1170px) {
+  .products-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
