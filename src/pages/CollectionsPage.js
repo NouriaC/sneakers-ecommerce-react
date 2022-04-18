@@ -7,7 +7,7 @@ const CollectionsPage = () => {
   return (
     <main>
       <PageHero title="products" />
-      <section className="page">
+      <div className="page">
         <div className="section-center products">
           <Search />
           <section className="products-container">
@@ -16,7 +16,7 @@ const CollectionsPage = () => {
             })}
           </section>
         </div>
-      </section>
+      </div>
     </main>
   );
 };

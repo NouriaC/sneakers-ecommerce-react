@@ -1,0 +1,13 @@
+.section-center.hero {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+}
+
+.content p {
+  line-height: 2;
+  max-width: 45em;
+  margin-bottom: 2rem;
+  color: var(--neutral-dark-g-b);
+  font-size: 1rem;
+}
