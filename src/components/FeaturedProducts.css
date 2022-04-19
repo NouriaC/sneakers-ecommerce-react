@@ -1,0 +1,26 @@
+.featured-products {
+  background: var(--neutral-l-g-b);
+}
+
+.featured {
+  margin: 4rem auto;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.featured img {
+  height: 285px;
+}
+
+.featured-btn {
+  display: block;
+  width: 148px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .featured {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+}

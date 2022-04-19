@@ -1,10 +1,12 @@
 import "./Hero.css";
 import { Link } from "react-router-dom";
+import heroImgOne from "../assets/home-photo-1.jpeg";
+import heroImgTwo from "../assets/home-photo-2.jpeg";
 
 const Hero = () => {
   return (
     <section className="section-center hero">
-      <article className="content">
+      <article className="hero-content">
         <h1>
           the home of <br />
           fashionable sneakers
@@ -22,7 +24,10 @@ const Hero = () => {
           shop now
         </Link>
       </article>
-      <article></article>
+      <article className="img-container">
+        <img src={heroImgOne} alt="basket ball" className="main-img" />
+        <img src={heroImgTwo} alt="pair of sneakers" className="accent-img" />
+      </article>
     </section>
   );
 };

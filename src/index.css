@@ -80,6 +80,11 @@ ul {
   color: var(--primary-1);
 }
 
+.title {
+  text-align: center;
+  font-size: 1.85rem;
+}
+
 .section {
   padding: 5rem 0;
 }
@@ -143,6 +148,7 @@ ul {
   max-width: 45em;
   margin: 0 auto;
   margin-top: 2rem;
+  color: var(--neutral-dark-g-b);
 }
 
 @media (min-width: 1170px) {
