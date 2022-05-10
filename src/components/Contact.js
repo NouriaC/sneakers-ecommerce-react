@@ -15,7 +15,7 @@ const Contact = () => {
           aliquip ex ea commodo consequat.
         </p>
         <form
-          action="https://formspree.io/f/xvolzjrp"
+          action="https://formspree.io/f/xlezpyrq"
           className="contact-form"
           method="POST"
         >

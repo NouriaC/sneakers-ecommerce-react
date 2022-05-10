@@ -1,9 +1,20 @@
-import { products } from "../data";
 import PageHero from "../components/PageHero";
 import Search from "../components/Search";
 import Product from "../components/Product";
+import { useGlobalContext } from "../context";
 
 const CollectionsPage = () => {
+  const { products, isLoading } = useGlobalContext();
+  if (isLoading) {
+    return <div className="loading page-100 section-center">Loading...</div>;
+  }
+  // if (items.length < 1) {
+  //   return (
+  //     <h2 className=" page-100 section-center">
+  //       no sneakers matched your search
+  //     </h2>
+  //   );
+  // }
   return (
     <main>
       <PageHero title="products" />
@@ -12,7 +23,7 @@ const CollectionsPage = () => {
           <Search />
           <section className="products-container">
             {products.map((product) => {
-              return <Product key={product.id} {...product} />;
+              return <Product key={product._id} {...product} />;
             })}
           </section>
         </div>

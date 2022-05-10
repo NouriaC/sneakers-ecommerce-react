@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Search.css";
+import { products } from "../data";
+import { useGlobalContext } from "../context";
 
 const Search = () => {
+  const { setSearchTerm } = useGlobalContext();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <form onSubmit={(e) => e.preventDefault()}>
+    <form onSubmit={handleSubmit}>
       {/* search input */}
       <div className="form-control">
-        <input
-          type="text"
-          name="text"
-          placeholder="search"
-          className="search-input"
-          value="search"
-        />
+        <input type="search" placeholder="search" className="search-input" />
       </div>
     </form>
   );

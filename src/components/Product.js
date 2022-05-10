@@ -3,12 +3,12 @@ import "./Product.css";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Product = ({ id, name, price, description, img }) => {
+const Product = ({ _id, name, price, imgURL }) => {
   return (
     <article>
       <div className="container">
-        <img src={img} alt={name} className="product-img" />
-        <Link to={`/products/${id}`} className="product-link">
+        <img src={imgURL} alt={name} className="product-img" />
+        <Link to={`/products/${_id}`} className="product-link">
           <FaSearch />
         </Link>
       </div>
