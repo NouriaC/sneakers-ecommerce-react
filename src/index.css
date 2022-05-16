@@ -46,6 +46,10 @@ h1 {
   font-size: 2.5rem;
 }
 
+p {
+  margin-bottom: 1.25rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -179,4 +183,50 @@ ul {
 .error-section h3 {
   text-transform: none;
   margin-bottom: 2rem;
+}
+
+/* single product page */
+
+.product-center {
+  display: grid;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.single-img {
+  width: 100%;
+  height: 600px;
+  display: block;
+  border-radius: var(--borderRadius);
+  object-fit: cover;
+}
+
+.price {
+  color: var(--primary-1);
+}
+
+.desc {
+  line-height: 2;
+  max-width: 45em;
+}
+
+.info {
+  text-transform: capitalize;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 125px 1fr;
+}
+
+.info span {
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .product-center {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .price {
+    font-size: 1.25rem;
+  }
 }

@@ -7,6 +7,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [products, setProducts] = useState([]);
+  const [singleProduct, setSingleProduct] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState("a");
   const [error, setError] = useState(false);
@@ -31,6 +32,18 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  const fetchSingleProduct = async (url) => {
+    setIsLoading(true);
+    try {
+      const { data } = await axios.get(url);
+      setSingleProduct(data.product);
+      setIsLoading(false);
+      setError(false);
+    } catch (error) {
+      setError(error.message);
+      setIsLoading(false);
+    }
+  };
   useEffect(() => {
     fetchProducts(url);
   }, []);
@@ -42,9 +55,12 @@ const AppProvider = ({ children }) => {
         openSidebar,
         closeSidebar,
         setSearchTerm,
+        searchTerm,
         isLoading,
         error,
         products,
+        fetchSingleProduct,
+        singleProduct,
       }}
     >
       {children}

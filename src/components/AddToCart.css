@@ -1,0 +1,52 @@
+.cart-section {
+  margin-top: 2rem;
+}
+
+.cart-colors {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cart-colors span {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.cart-colors div {
+  display: flex;
+}
+
+.color-btn {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #222;
+  margin-right: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-btn svg {
+  font-size: 0.75rem;
+  color: var(--white);
+}
+
+.active {
+  opacity: 1;
+}
+
+.cart-btn-container {
+  margin-top: 2rem;
+}
+
+.cart-btn {
+  margin-top: 1rem;
+  width: 140px;
+}

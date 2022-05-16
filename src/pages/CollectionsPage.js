@@ -4,9 +4,17 @@ import Product from "../components/Product";
 import { useGlobalContext } from "../context";
 
 const CollectionsPage = () => {
-  const { products, isLoading } = useGlobalContext();
+  const { products, isLoading, error } = useGlobalContext();
+
   if (isLoading) {
     return <div className="loading page-100 section-center">Loading...</div>;
+  }
+  if (error) {
+    return (
+      <div className="loading page-100 section-center">
+        There was an error...
+      </div>
+    );
   }
   // if (items.length < 1) {
   //   return (
