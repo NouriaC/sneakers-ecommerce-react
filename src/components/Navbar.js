@@ -30,9 +30,12 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="nav-cart">
-            <button className="nav-cart-btn">
-              <IoCartOutline />
-            </button>
+            <Link to="/cart" className="nav-cart-btn">
+              <span className="cart-container">
+                <IoCartOutline />
+                <span className="cart-value">0</span>
+              </span>
+            </Link>
             <img src={avatar} className="avatar" alt="avatar" />
           </div>
         </div>
