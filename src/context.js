@@ -9,7 +9,7 @@ const AppProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [singleProduct, setSingleProduct] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("a");
+  const [searchTerm, setSearchTerm] = useState("");
   const [error, setError] = useState(false);
 
   const openSidebar = () => {
@@ -44,6 +44,7 @@ const AppProvider = ({ children }) => {
       setIsLoading(false);
     }
   };
+
   useEffect(() => {
     fetchProducts(url);
   }, []);

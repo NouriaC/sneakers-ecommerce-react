@@ -16,19 +16,19 @@ const CollectionsPage = () => {
       </div>
     );
   }
-  // if (items.length < 1) {
-  //   return (
-  //     <h2 className=" page-100 section-center">
-  //       no sneakers matched your search
-  //     </h2>
-  //   );
-  // }
+  if (products.length < 1) {
+    return (
+      <h2 className=" page-100 section-center">
+        no sneakers matched your search
+      </h2>
+    );
+  }
   return (
     <main>
       <PageHero title="products" />
       <div className="page">
         <div className="section-center products">
-          <Search />
+          <Search products={products} />
           <section className="products-container">
             {products.map((product) => {
               return <Product key={product._id} {...product} />;
