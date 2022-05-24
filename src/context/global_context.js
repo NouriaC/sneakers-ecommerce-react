@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import axios from "axios";
-import { products_url as url } from "./utils";
+import { products_url as url } from "../utils";
 
 const AppContext = React.createContext();
 

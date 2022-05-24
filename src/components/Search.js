@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Search.css";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../context/global_context";
 
 const Search = ({ products }) => {
   const { searchTerm, setSearchTerm } = useGlobalContext();
@@ -8,6 +8,11 @@ const Search = ({ products }) => {
   const updateFilter = (e) => {
     let value = e.target.value;
     setSearchTerm(value);
+    let filteredProducts = [...products];
+    filteredProducts = filteredProducts.filter((product) => {
+      return product.name.toLowerCase().startsWith(searchTerm);
+    });
+    return filteredProducts;
   };
 
   console.log(searchTerm);

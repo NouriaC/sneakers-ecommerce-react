@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../context/global_context";
 import { products_url as url, formatPrice } from "../utils";
 import PageHero from "../components/PageHero";
 import Ratings from "../components/Ratings";

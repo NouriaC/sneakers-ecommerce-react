@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { links } from "../data";
 import { IoCartOutline } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../context/global_context";
 
 const Navbar = () => {
   const { openSidebar } = useGlobalContext();

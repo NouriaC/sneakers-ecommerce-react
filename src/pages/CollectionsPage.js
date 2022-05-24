@@ -1,7 +1,7 @@
 import PageHero from "../components/PageHero";
 import Search from "../components/Search";
 import Product from "../components/Product";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../context/global_context";
 
 const CollectionsPage = () => {
   const { products, isLoading, error } = useGlobalContext();

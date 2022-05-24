@@ -1,7 +1,7 @@
 import "./FeaturedProducts.css";
 import Product from "./Product";
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../context/global_context";
 
 const FeaturedProducts = () => {
   const { products, isLoading, error } = useGlobalContext();

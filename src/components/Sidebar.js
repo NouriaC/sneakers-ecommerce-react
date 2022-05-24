@@ -3,7 +3,7 @@ import { links } from "../data";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { IoClose } from "react-icons/io5";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../context/global_context";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
