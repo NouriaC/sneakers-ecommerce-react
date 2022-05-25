@@ -230,3 +230,32 @@ ul {
     font-size: 1.25rem;
   }
 }
+
+/* cart page */
+
+.cart-empty {
+  text-align: center;
+}
+
+.cart-link-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.cart-link-btn {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+  background: var(--primary-1);
+  color: var(--white);
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.cart-clear-btn {
+  background: var(--black);
+}
