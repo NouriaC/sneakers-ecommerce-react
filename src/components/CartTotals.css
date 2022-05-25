@@ -10,9 +10,7 @@
   padding: 1.5rem 3rem;
 }
 
-.cart-totals h4,
-h5,
-p {
+.cart-totals-content {
   display: grid;
   grid-template-columns: 200px 1fr;
 }
