@@ -1,29 +1,29 @@
-.cart-content .cart-columns-section {
+.cart-columns-section {
   display: none;
 }
 
 @media (min-width: 776px) {
-  .cart-content {
+  .cart-columns-section {
     display: block;
   }
 
-  .cart-columns-section {
+  .cart-columns-content {
     display: grid;
     grid-template-columns: 316px 1fr 1fr 1fr auto;
     justify-items: center;
     column-gap: 1rem;
   }
 
-  .cart-columns-section h5 {
-    color: var(----neutral-v-dark-b);
+  .cart-columns-content h5 {
+    color: var(--neutral-v-dark-b);
     font-weight: 400;
   }
 
-  .cart-columns-section span {
+  .cart-columns-content span {
     width: 2rem;
     height: 2rem;
   }
-  .cart-columns-section hr {
+  .cart-columns-hr {
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
