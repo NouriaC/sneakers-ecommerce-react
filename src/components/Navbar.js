@@ -6,9 +6,11 @@ import { links } from "../data";
 import { IoCartOutline } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import { useGlobalContext } from "../context/global_context";
+import { useCartContext } from "../context/cart_context";
 
 const Navbar = () => {
   const { openSidebar } = useGlobalContext();
+  const { total_items } = useCartContext();
   return (
     <nav>
       <div className="nav-center">
@@ -33,7 +35,7 @@ const Navbar = () => {
             <Link to="/cart" className="nav-cart-btn">
               <span className="cart-container">
                 <IoCartOutline />
-                <span className="cart-value">0</span>
+                <span className="cart-value">{total_items}</span>
               </span>
             </Link>
             <img src={avatar} className="avatar" alt="avatar" />

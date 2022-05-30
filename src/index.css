@@ -259,3 +259,11 @@ ul {
 .cart-clear-btn {
   background: var(--black);
 }
+
+/* checkout page */
+
+.checkout-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

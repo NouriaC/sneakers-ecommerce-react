@@ -2,7 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
-import { Home, Collections, SingleProduct, About, Error, Cart } from "./pages";
+import {
+  Home,
+  Collections,
+  SingleProduct,
+  About,
+  Error,
+  Cart,
+  Checkout,
+} from "./pages";
 
 function App() {
   return (
@@ -14,6 +22,7 @@ function App() {
         <Route path={"/collections"} element={<Collections />} />
         <Route path={"/collections/:id"} element={<SingleProduct />} />
         <Route path={"/cart"} element={<Cart />} />
+        <Route path={"/checkout"} element={<Checkout />} />
         <Route path={"/about"} element={<About />} />
         <Route path={"*"} element={<Error />} />
       </Routes>
