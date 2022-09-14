@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./StripeCheckout.css";
 import { loadStripe } from "@stripe/stripe-js";
 import {
   CardElement,
@@ -17,7 +18,7 @@ const CheckoutForm = () => {
   const { cart, total_amount, shipping_fee, clearCart } = useCartContext();
   const navigate = useNavigate();
 
-  // SRIPE STUFF
+  // STRIPE CODE
   const [succeeded, setSucceded] = useState(false);
   const [error, setError] = useState(null);
   const [processing, setProcessing] = useState("");
@@ -50,6 +51,7 @@ const CheckoutForm = () => {
         "/.netlify/functions/create-payment-intent",
         JSON.stringify({ cart, shipping_fee, total_amount })
       );
+      console.log(data);
       setClientSecret(data.clientSecret);
     } catch (error) {
       console.log(error.response);
@@ -100,7 +102,7 @@ const CheckoutForm = () => {
           <p>Test Card Number: 4242 4242 4242 4242</p>
         </article>
       )}
-      <form classname="checkout-form" id="payment-form" onSubmit={handleSubmit}>
+      <form className="checkout-form" id="payment-form" onSubmit={handleSubmit}>
         <CardElement
           id="card-element"
           options={cardStyle}
