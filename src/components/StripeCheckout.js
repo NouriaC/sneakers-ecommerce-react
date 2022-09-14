@@ -51,7 +51,6 @@ const CheckoutForm = () => {
         "/.netlify/functions/create-payment-intent",
         JSON.stringify({ cart, shipping_fee, total_amount })
       );
-      console.log(data);
       setClientSecret(data.clientSecret);
     } catch (error) {
       console.log(error.response);
@@ -83,7 +82,7 @@ const CheckoutForm = () => {
       setTimeout(() => {
         clearCart();
         navigate("/");
-      }, 1000);
+      }, 5000);
     }
   };
 
@@ -93,7 +92,7 @@ const CheckoutForm = () => {
         <article>
           <h4>Thank you</h4>
           <h4>Your payment was successful!</h4>
-          <h4>Redirecting to Homepage shortly</h4>
+          <h4>Redirecting to Homepage...</h4>
         </article>
       ) : (
         <article>
@@ -145,17 +144,5 @@ const StripeCheckout = () => {
     </section>
   );
 };
-
-//   input {
-//     border-radius: 6px;
-//     margin-bottom: 6px;
-//     padding: 12px;
-//     border: 1px solid rgba(50, 50, 93, 0.1);
-//     max-height: 44px;
-//     font-size: 16px;
-//     width: 100%;
-//     background: white;
-//     box-sizing: border-box;
-//   }
 
 export default StripeCheckout;
